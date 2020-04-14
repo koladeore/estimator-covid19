@@ -5,19 +5,32 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "start": "cross-env NODE_ENV=production babel-node src",
+    "dev": "cross-env DEBUG=dev nodemon --exec babel-node src",
     "lint": "eslint ./src/"
   },
   "dependencies": {
-    "on-covid-19": "^0.1.3"
+    "cross-env": "^7.0.2",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "log4js": "^6.2.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.3",
+    "on-covid-19": "^0.1.3",
+    "path": "^0.12.7",
+    "xml-js": "^1.6.11"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.9.0",
     "babel-jest": "^25.2.0",
-    "jest": "^25.2.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.20.1"
+    "eslint-plugin-import": "^2.20.1",
+    "jest": "^25.2.0"
   },
   "browserslist": [
     "last 1 Chrome versions"
